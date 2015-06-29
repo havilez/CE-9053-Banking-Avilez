@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Bank Account Assignment
 
 Create a project which allows the following functionality. Test your functionality with jasmine tests. Use jasmine-node create a module for your BankAccount object.
@@ -100,3 +101,7 @@ account.withdraw(1);//should throw an exception
 * also making a withdrawal that will result in negative balance should also throw an exception
 * If the user’s account balance falls below $1000, then all withdrawals should also result in a charge of $1. We need to take this into account when making a withdrawal so that if an account has a balance of $1, and a withdrawal of $1 was attempted, then we should throw an exception because that would result in a negative balance.
 * attempting to widthdraw from a locked account should throw an exception
+=======
+# CE-9053-Banking-Avilez
+Banking BDD project
+>>>>>>> 06c9b2ffa60707c30cec54e8a6b95afc208bdf7b
