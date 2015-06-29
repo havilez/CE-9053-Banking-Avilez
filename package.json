@@ -18,5 +18,8 @@
   "homepage": "https://github.com/ericpkatz/Banking-CE-9053-Project",
   "devDependencies": {
     "jasmine-node": "^1.14.5"
+  },
+  "dependencies": {
+    "lodash": "^3.9.3"
   }
 }
