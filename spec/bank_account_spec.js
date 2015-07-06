@@ -1,5 +1,6 @@
 var BankAccount = require("../app/bank_account");
 
+<<<<<<< HEAD
 beforeEach(function () {
     this.addMatchers({
         toBeNonNegative: function() {
@@ -72,3 +73,10 @@ describe("Bank Account behavior when properties not provided", function () {
 
 });
 
+=======
+describe("BankAccount", function(){
+    it("exists", function(){
+        expect(BankAccount).toBeDefined();
+    });
+});
+>>>>>>> 99e09772fcdc1000a11e8143b78e25d55bc4700f

@@ -6,6 +6,7 @@ function BankAccount( parms )
 {
     if (!parms.accountId) throw "no valid account id";
 
+<<<<<<< HEAD
   //  if ( parms.balance < 0 ) throw " initial balance cannot be negative";
 
 
@@ -31,10 +32,21 @@ function BankAccount( parms )
 
     if  (parms.balance >= 0 ) {
         this.balance = parms.balance;
+=======
+
+    var defaults = {accoundId: 'default',balance: 0, locked: false};
+    var values = _assign({},defaults,parms)
+
+    this.accountId = values.accountid;
+
+    if  (values.balance >= 0 ) {
+        this.balance = values.balance;
+>>>>>>> 99e09772fcdc1000a11e8143b78e25d55bc4700f
     } else {
         throw new Error("balance less than zero")
     };
 
+<<<<<<< HEAD
     if (typeof parms.locked === 'boolean') {
         this.locked = parms.locked;
     } else
@@ -58,5 +70,20 @@ BankAccount.prototype.locked = function() {
 
 
 
+=======
+    if (typeof values.locked === 'boolean') {
+        this.locked = values.locked;
+    } else
+        throw new Error( "Account locked value is not boolean");
+};
+
+BankAccount.prototype = {
+    deposit: function ( amount) {
+        this.balance = amount;
+    }
+
+};
+
+>>>>>>> 99e09772fcdc1000a11e8143b78e25d55bc4700f
 module.exports = BankAccount;
 
